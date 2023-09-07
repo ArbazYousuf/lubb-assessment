@@ -17,15 +17,14 @@ Instructions
 Clone the repository:
 
 
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/ArbazYousuf/lubb-assessment.git
 Navigate to the directory:
 
-cd your-repository-name
+cd lubb-assessment
 Install the required dependencies:
 
 npm install
 Run the project locally:
-
 
 npm start
 
