@@ -36,7 +36,7 @@ export default function SignUp() {
 
     useEffect(() => {
         if (user) navigate("/")
-    }, [user])
+    }, [user, navigate])
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();

@@ -33,7 +33,7 @@ export default function SignIn() {
 
     useEffect(() => {
         if (user) navigate("/")
-    }, [user])
+    }, [user, navigate])
 
 
 
