@@ -14,20 +14,19 @@ Check out the live version of the project here.
 # Installation & Setup
 Prerequisites
 Node.js and npm installed.
-Firebase CLI (if not installed, run npm install -g firebase-tools).
-Instructions
+
+# Instructions
+
 Clone the repository:
-
-
 git clone https://github.com/ArbazYousuf/lubb-assessment.git
+
 Navigate to the directory:
-
 cd lubb-assessment
+
 Install the required dependencies:
-
 npm install
-Run the project locally:
 
+Run the project locally:
 npm start
 
 # Contributing
