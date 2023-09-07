@@ -28,7 +28,7 @@ const Main: React.FC = () => {
                 setGender(data.gender);
                 setFullName(data.fullName)
             }
-            if (data?.hasLoggedInBefore == undefined) {
+            if (data?.hasLoggedInBefore === undefined) {
                 setShowMessage(true)
                 setDoc(userDocRef, { hasLoggedInBefore: true }, { merge: true });
             }

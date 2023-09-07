@@ -1,21 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import './style.css'
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import { useTheme, useMediaQuery, Alert } from '@mui/material';
+import { Alert } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import InputWithIcon from '../../components/InputBox';
 import MailRoundedIcon from '@mui/icons-material/MailRounded';
 import LockRoundedIcon from '@mui/icons-material/LockRounded';
 import { Hidden } from '@mui/material';
-import GroupAddIcon from '@mui/icons-material/GroupAdd';
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import { AuthProvider, useAuth } from '../../context/authContext';
 
 
@@ -53,7 +51,7 @@ export default function SignUp() {
         if (password !== rePassword) {
             setErrors({ ...errors, rePassword: true })
         }
-        if (email && password && password.length >= 8 && password == rePassword) {
+        if (email && password && password.length >= 8 && password === rePassword) {
             setErrors({ email: false, fullName: false, password: false, rePassword: false })
             signup(email, password,)
             // dispatch(signup({ email, password, fullname: fullName }))
@@ -106,7 +104,7 @@ export default function SignUp() {
                                 }
                             }}
                         >
-                            <img src='/logo.png' style={{ maxWidth: '100%', height: 'auto', marginBottom: 40 }} />
+                            <img alt="logo" src='/logo.png' style={{ maxWidth: '100%', height: 'auto', marginBottom: 40 }} />
                             <Typography
                                 className='dont-account-typo'
                                 sx={{ fontSize: ["12px", "14px", "16px"] }}

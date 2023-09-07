@@ -107,7 +107,7 @@ export default function SignIn() {
                             }
                         }}
                     >
-                        <img src='/logo.png' style={{ maxWidth: '30%', height: 'auto', marginBottom: 40 }} />
+                        <img alt="logo" src='/logo.png' style={{ maxWidth: '30%', height: 'auto', marginBottom: 40 }} />
 
                         <Typography
                             className='dont-account-typo'
