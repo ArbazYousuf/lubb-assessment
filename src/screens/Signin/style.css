@@ -1,0 +1,64 @@
+:root {
+    --blue: linear-gradient(180deg, #0575E6 0%, #02298A 84.79%, #021B79 100%);
+}
+
+.background-leftside {
+    background: var(--blue, linear-gradient(180deg, #0575E6 0%, #02298A 84.79%, #021B79 100%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 150px
+}
+
+.header-text {
+    color: #FFF;
+    /* Title */
+    font-family: Inter !important;
+    font-size: 80px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: 120% !important;
+    /* 96px */
+}
+
+.dont-account-typo {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.reset-pass-a {
+    color: #0575E6;
+}
+
+/* Mobile screen adjustments */
+@media only screen and (max-width: 600px) {
+    .background-leftside {
+        padding: 0px 30px;
+        /* Reduce padding for mobile */
+    }
+
+    .header-text {
+        font-size: 32px !important;
+        /* Reduce font size for mobile */
+    }
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* For hover effect */
+a:hover {
+    color: darkblue;
+}
+
+.privacy-policy {
+    color: gray;
+    font-size: 12px
+}
