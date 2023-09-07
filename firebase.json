@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "lubb",
     "public": "public",
     "ignore": [
       "firebase.json",
